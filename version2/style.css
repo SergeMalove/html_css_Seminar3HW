@@ -2,28 +2,44 @@
     margin: 0;
     padding: 0;
 }
+@font-face {
+    font-family: 'Gilroy-Medium', sans-serif;
+    src: url(./fonts/Gilroy-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Gilroy-Bold', sans-serif;
+    src: url(./fonts/Gilroy-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Gilroy-Semibold', sans-serif;
+    src: url(./fonts/Gilroy-Semibold.ttf);
+}
 
 a { 
     text-decoration: none; 
     font-family: "Open Sans", Arial;
 }
 
-.main_block {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1320px;
-    height: 930px;
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 1220px;
+    margin: auto;
+    width: 80%;
 }
 
 .header {
     display: flex;
-    margin: 15px 15px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
     height: 100px;
 }
 
 .logo {
-    margin-left: 50px;
-    margin-top: 20px;
     height: 50px;
 }
 
@@ -32,25 +48,27 @@ a {
 }
 
 .title_h2 {
-    margin-left: 10px;
-    margin-top: 22px;
+    margin-left: 25px;
     font-size: 40px;
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-weight: 700;
 }
 
 .menu {
     display: flex;
-    margin-top: 30px;
+    flex-wrap: wrap;
     margin-left: 300px;
     width: 600px;
-    height: 40px;
+    height: 50px;
 }
 
 .menu_link {
     margin: auto;
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     color: black;
+    font-family: 'Gilroy-Semibold', sans-serif;
+    font-weight: 500;
 }
 
 .menu_link:hover {
@@ -59,41 +77,45 @@ a {
 
 .intro_cont {
     display: flex;
-    margin: 15px 15px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
     height: 550px;
 }
 
 .intro_text_block {
-    margin-top: 15px;
-    margin-left: 15px;
+    display: flex;
     height: 517px;
     width: 600px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
 }
 
 .intro_textH1 {
-    margin-top: 50px;
-    margin-left: 30px;
     font-size: 60px;
+    font-family: 'Gilroy-Bold', sans-serif;
 }
 
 .intro_text {
-    margin-top: 30px;
-    margin-left: 30px;
     font-size: 25px;
     color: rgba(136, 136, 136, 1);
+    font-family: 'Gilroy-Medium', sans-serif;
 }
 
 .button_cont {
     display: flex;
-    margin-top: 50px;
-    margin-left: 15px;
     height: 85px;
-    width: 350px;
+    width: 330px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
 }
 
 .button {
-    margin-top: 18px;
-    margin-left: 15px;
     height: 50px;
     width: 150px;
     border: 1px solid rgba(242, 88, 34, 1);
@@ -102,31 +124,29 @@ a {
     background-color: rgba(242, 88, 34, 1);
     font-size: 16px;
     font-weight: bold;
+    font-family: 'Gilroy-Bold', sans-serif;
 }
 
 .button_text {
-    margin-top: 28px;
-    margin-left: 30px;
     font-size: 24px;
+    font-family: 'Gilroy-Bold', sans-serif;
     font-weight: bold;
     color: rgba(170, 170, 170, 1);
 }
 
 .main_pic {
-    margin-top: 25px;
-    margin-left: 25px;
     height: 400px;
 }
 
 .brands {
-    margin-top: 50px;
-    margin-left: 15px;
-    margin-right: 15px;
+    display: flex;
     height: 170px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    flex-direction: row;
 }
 
 .brands_logos {
-    margin-top: 60px;
-    margin-left: 40px;
     height: 50px;
 }
